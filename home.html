@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: cursive;
+                font-size: 17px;
+            }
+
+            #myVideo {
+              position: fixed;
+              right: 0;
+              bottom: 0;
+              min-width: 100%;
+              min-height: 100%;
+          }
+
+          .content {
+              position: fixed;
+              bottom: 50;
+              background: rgba(0, 0, 0, 0.5);
+              color: #f1f1f1;
+              width: 100%;
+              padding: 0px;
+          }
+          #myBtn {
+              width: 300px;
+              height: 90px;
+              font-size: 60px;
+              font-family: cursive;
+              padding: 10px;
+              border: 2px solid rgba(202, 230, 238, 0.5);
+              background-color: rgba(7, 20, 56, 0.432);
+              border-radius: 56px;
+              color: #fff;
+              cursor: pointer;
+              font-weight: 100;
+              font-size: 50px;
+          }
+
+          #myBtn:hover {
+              background: rgba(221, 221, 221, 0.521);
+              color: black;
+              border: 2px solid rgba(7, 20, 56, 0.432);
+              border-radius: 56px;
+          }
+          .button {
+              position: fixed;
+              display: flex;
+              justify-content: center;
+              background: rgba(65, 53, 53, 0);
+              border-radius: 25px;
+              color: #f1f1f1;
+              border: 0;
+              align-items: center;
+              height: 100%;
+              width: 100%;
+
+          }
+          .footer {
+              position: fixed;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              background-color: rgba(30, 24, 36, 0.397);
+              text-align: center;
+          }
+          .nav {
+ 
+            position: absolute;
+            width: 1250px;
+            height: 70px;
+            left: 50px;
+            top: 28px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+              
+          }
+      </style>
+    </head>
+    
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="ship.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>Vikkytech</h1>
+            <p style="font-family: 'Times New Roman', Times, serif; font-size: 50px; text-align: center;">
+                What Do You Know About Deep Space ?
+            </p>
+          <p style="text-align: center;">
+              And it's endless possibilities
+          </p>
+        </div>
+        <div class="button">
+            <button id="myBtn" onclick="location.href='explore.html'">
+                Explore
+                </button>
+        </div>
+
+      <div class="footer">
+         <p style="color: whitesmoke;">
+        footer
+    </p>
+      </div>
+    </body>
+    
+</html>
